@@ -161,5 +161,20 @@ python src/python/classification/svm_classifier.py
 
 This work is based on the capstone project “Brain–Computer Interface Design and Implementation” completed at Bahçeşehir University, Faculty of Engineering and Natural Sciences, by a joint EEE–BME team.
 
+---
+
+## Software & Data Usage Notice
+
+This project uses **Spike Recorder**, a tool developed by Backyard Brains (BYB),  
+for real‑time EEG visualization and data acquisition.  
+The use of Spike Recorder in this project was carried out **with explicit permission  
+from the Backyard Brains team**, granted during the development of the original  
+capstone project.
+
+All simulated EEG data included in this repository is artificially generated  
+and does not contain any human subject data.
+
+
 ## License
-License of Bahcesehir University
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for details.
