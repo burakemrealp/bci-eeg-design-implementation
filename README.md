@@ -39,30 +39,19 @@ The BCI system consists of:
 
 ## 📂 Repository Structure
 
-BCI-EEG-Design-Implementation/
-│
-├── src/
-│   ├── python/
-│   │   ├── eeg_analysis_original.py        # Original capstone analysis code
-│   │   └── classification/
-│   │        ├── preprocess_for_svm.py      # Filtering + segmentation
-│   │        ├── extract_features.py        # Feature extraction (band power)
-│   │        └── svm_classifier.py          # SVM training & evaluation
-│   │
-│   └── arduino/
-│        └── eeg_spike_recorder_bridge.ino  # Arduino → Spike Recorder interface
-│
-├── data/
-│   ├── raw/                                # Raw .wav files from Spike Recorder
-│   └── processed/                           # CSV, segments, features, labels
-│
-├── results/
-│   ├── example_time_domain.png
-│   └── example_frequency_domain.png
-│
-└── docs/
-├── system_overview.md
-└── block_diagram.png
+| Path | Description |
+|------|-------------|
+| `src/python/eeg_analysis_original.py` | Original capstone EEG analysis code |
+| `src/python/wav_to_csv.py` | Converts Spike Recorder `.wav` to `.csv` |
+| `src/python/classification/preprocess_for_svm.py` | Filtering + segmentation |
+| `src/python/classification/extract_features.py` | Feature extraction (band power) |
+| `src/python/classification/svm_classifier.py` | SVM training & evaluation |
+| `src/arduino/eeg_spike_recorder_bridge.ino` | Arduino → Spike Recorder interface |
+| `data/raw/` | Raw EEG recordings |
+| `data/processed/` | Processed CSV, segments, features |
+| `results/` | Plots and analysis outputs |
+| `README.md` | Project documentation |
+
 
 
 ---
